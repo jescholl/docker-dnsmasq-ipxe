@@ -1,4 +1,4 @@
-FROM alpine:3.11.5 AS builder
+FROM alpine:3.17.1 AS builder
 
 RUN apk add --update \
   git \
@@ -19,7 +19,7 @@ RUN make bin/undionly.kpxe
 
 
 
-FROM alpine:3.11.5
+FROM alpine:3.17.1
 
 LABEL maintainer "jason.e.scholl@gmail.com"
 
