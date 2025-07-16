@@ -1,4 +1,4 @@
-FROM alpine:3.22.0 AS builder
+FROM alpine:3.22.1 AS builder
 
 RUN apk add --update \
   git \
@@ -28,7 +28,7 @@ RUN make bin/undionly.kpxe bin-x86_64-efi/ipxe.efi
 
 
 
-FROM alpine:3.22.0
+FROM alpine:3.22.1
 
 LABEL maintainer "jason.e.scholl@gmail.com"
 
