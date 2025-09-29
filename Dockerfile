@@ -9,7 +9,7 @@ RUN apk add --update \
   bash \
   cdrkit
 
-RUN git clone git://git.ipxe.org/ipxe.git /build
+RUN git clone https://github.com/ipxe/ipxe.git /build
 
 WORKDIR /build/src
 
